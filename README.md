@@ -33,3 +33,36 @@ Abecedario
     <script src="script.js"></script>
 </body>
 </html>
+
+CSS
+/* Cambiar el fondo de toda la página a gris */
+body {
+    background-color: gray;
+}
+
+/* Cambiar el color del h3 a verde por defecto */
+h3 {
+    color: green;
+}
+Javascript
+/* Clase para aplicar el color azul a h3 específicos */
+.color-blue {
+    color: blue;
+}
+
+/* Clase para aplicar el color rojo a h3 específicos */
+.color-red {
+    color: red;
+}
+
+// Cambiar colores aleatorios cuando se hace clic en el h5
+document.getElementById("interactive-h5").addEventListener("click", function() {
+    // Lista de colores aleatorios
+    const colors = ["green", "blue", "red"];
+    
+    // Elegir un color aleatorio
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    // Cambiar el color del texto
+    this.style.color = randomColor;
+});
